@@ -1,0 +1,118 @@
+/* Full-screen background with watermark image */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('\research.png'); /* Corrected path for background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Centered white rectangle block */
+.centered-block {
+  background-color: white;
+  max-width: 800px;  /* Adjust the width as needed */
+  width: 90%;  /* For responsiveness */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;  /* To position the logo within this container */
+  z-index: 10;  /* Make sure it stays on top of the background */
+  text-align: center; /* Ensures text is centered */
+}
+
+/* Position the company logo in the top-left corner */
+.company-logo {
+  position: absolute;
+  top: 20px;  /* Adjust to move the logo down */
+  left: 20px;  /* Adjust to move the logo right */
+  width: 70px;  /* Adjust the size of the logo */
+  height: auto;
+}
+
+/* Heading Style */
+.centered-block h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+.centered-block p {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.centered-block input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.centered-block input[type="text"]:focus {
+  border-color: #007bff; /* Change border color when focused */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Button Style */
+.centered-block button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.centered-block button:hover {
+  background-color: #0056b3;
+}
+
+/* Text Summary Style */
+.centered-block .summary {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 600px) {
+  .centered-block {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .centered-block h1 {
+    font-size: 1.6rem;
+  }
+
+  .centered-block p {
+    font-size: 1rem;
+  }
+
+  .centered-block button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .centered-block .summary {
+    font-size: 1rem;
+  }
+}
