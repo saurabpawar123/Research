@@ -14,8 +14,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 # API Keys (Replace these with your actual keys)
-NEWSDATA_API_KEY = "pub_673715014b19043c6b41b8fd826ed9f174808"
-GEMINI_API_KEY = "AIzaSyAzHxmg7rQDfZAQxBH2IC21-ckovauWFwM"
+NEWSDATA_API_KEY = "p808"
+GEMINI_API_KEY = "A"
 
 
 # Configure Gemini API
